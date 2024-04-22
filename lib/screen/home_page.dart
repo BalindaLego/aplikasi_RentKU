@@ -140,6 +140,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
               ListTile(
+                leading: Icon(Icons.food_bank),
+                title: Text('Datas'),
+               onTap: () {
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/datas-screen');
+                },
+              ),
+              ListTile(
                 leading: Icon(Icons.person),
                 title: Text('Profile'),
                 onTap: () {
